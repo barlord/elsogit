@@ -1,0 +1,24 @@
+.kekdobozfo {
+    border:blue 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.kekdoboz {
+    background:blue;
+    width:5%;
+    height: 50px;
+    margin-left: 2.5%;
+}
+.pirosdobozfo {
+    border:blue 1px solid;
+    display: flex;
+    justify-content: space-between;
+    background: #ed4337;
+
+}
+.piros{
+    background:purple;
+    width:5%;
+    height: 50px;
+    margin-left: 2.5%;
+}
