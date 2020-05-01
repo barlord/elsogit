@@ -54,3 +54,42 @@ let mynumbers= [31, 12, 23]
 mynumbers.forEach((number) => {
     console.log(number)
 })
+$('#title').text("my new title");
+$('#e1').text("Macrotis");
+$('#e2').css('border', '1px solid purple')
+$(".elso").css('background', 'yellow')
+
+let color='purple'
+let number3= 10
+let word='cool'
+/*if (color === "purple") {
+  $('.north').css('background', 'purple')
+}
+if (number3>100) {
+  $('.east').text("whoah, that's a big number.")
+  
+}else {
+  $('.east').text("just a regular number, please.")
+}*/
+if (color === "purple") {
+  $(".north").css("background", "purple");
+}
+
+if (number > 100) {
+  $(".east").text("whoah, that's a big number.");
+} else {
+  $(".east").text("just a regular number, please.");
+}
+if (word === "cool") {
+  $(".south").text("Power of DOM");
+} else {
+  $(".west").text("Power of DOM");
+}
+
+$('body').append(
+  '<h1>Hello World!</h1>'
+);
+let names= ['Marci', 'Józsi' , "Béla"]
+names.forEach((names) => {
+  $('ul').append(names)
+})
