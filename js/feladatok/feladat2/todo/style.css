@@ -1,1 +1,21 @@
-h2 {color: green}
+h2 {color: green;
+    }
+body {
+    background: #1657a1;
+}
+main {
+    width:300px;
+ margin-left:auto ;
+ margin-right: auto;
+ background: #ebf8fa;
+ border-radius: 10px;
+ 
+}
+img {
+    height: 20px;
+    width:  20px;
+    
+}
+img:hover {
+    cursor: pointer;
+}
