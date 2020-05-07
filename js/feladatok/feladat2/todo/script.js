@@ -1,8 +1,29 @@
 console.log('R+L by barlord')
 let ticknumber=0
+
 $('#addtodo').click(() =>{
     let todo= document.getElementById("todo").value
-    $('ul').append('<li id="test">'+todo + '<img src="/img/iconfinder_success_1646004.png" alt="tick"  id="pipa">')
+    console.log("he?")
+    $('ul').append(
+        `<li >${todo}  
+        <img src="/img/pipa.svg" alt="tick" class='done' >
+        <img src="/img/iconfinder_25_2135797.svg" alt="tick" class='delete' class="alap" >`)
     $('#todo').val('')
-    ticknumber=ticknumber+1
+   
+  
+        
+      
+
 })
+
+$('.todos-container').on('click', '.done', (event) => {
+    $(event.target).parent().toggleClass('completed')
+    console.log("jó?")
+    
+  });
+
+  $('.todos-container').on('click', '.delete', (event) => {
+    $(event.target).parent().toggleClass('deleted')
+    console.log("nem")
+    
+  });
